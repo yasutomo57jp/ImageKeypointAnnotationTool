@@ -24,7 +24,7 @@ void load_annotation(const std::string& inputfile, AnnoType& annotations){
 	std::ifstream ifs(inputfile);
 	if(! ifs){
 		std::cerr << "Input file is incorrect" << std::endl;
-		return;
+		exit(EXIT_FAILURE);
 	}
 	std::string line;
 	while(getline(ifs, line)){
