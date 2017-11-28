@@ -108,7 +108,7 @@ int main(int argc, char **argv){
 
 		auto& annotation = annotations[current_index];
 		for(int i=0; i<annotation.size(); i++){
-			auto color = cv::Scalar(i*255/annotation.size(), 255, 255);
+			auto color = cv::Scalar(i*255/annotation.size(), 0, 255);
 			cv::circle(img, annotation[i], CIRCLE_RADIUS, color, -1);
 		}
 
